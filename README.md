@@ -1,8 +1,8 @@
-#BurpJDSer-ngng
+#BurpJDSer-ng
 
 
 
-A Burp Extender plugin, that will take deserialized java objects and encode them in XML using the [Xtream](http://xstream.codehaus.org/) library.
+A Burp Extender plugin, that will deserialized java objects and encode them in XML using the [Xtream](http://xstream.codehaus.org/) library.
 
 Why? This release fixes the bug in the other implementation in JDSer-ng which didn't actually allow modification of the request. Also extends it further, allowing proper use of the intruder/scanner modules for deserialized Java objects. 
 
