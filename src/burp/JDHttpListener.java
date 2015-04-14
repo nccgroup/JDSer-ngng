@@ -34,7 +34,7 @@ public class JDHttpListener implements IHttpListener {
     @Override
     public void processHttpMessage(int toolFlag, boolean messageIsRequest, IHttpRequestResponse messageInfo)
     {
-        if (toolFlag == IBurpExtenderCallbacks.TOOL_SCANNER || toolFlag == IBurpExtenderCallbacks.TOOL_INTRUDER)
+        if (toolFlag == IBurpExtenderCallbacks.TOOL_SCANNER || toolFlag == IBurpExtenderCallbacks.TOOL_INTRUDER || toolFlag == IBurpExtenderCallbacks.TOOL_PROXY)
         {
 
             //if it is a request, check to see if it has the magic header

@@ -40,7 +40,7 @@ public class JDUtils {
     private static byte[] crap;
     public static byte[] serializeMagic = new byte[]{-84, -19};
     private static Object obj;
-    public static String SERIALIZEHEADER = "SERIALIZED-GOODNESS";
+    public static String SERIALIZEHEADER = "Via:SERIALIZED-GOODNESS";
 
     public static byte[] fromXML(byte[] original, IExtensionHelpers helpers)
     {

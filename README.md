@@ -4,7 +4,7 @@
 
 A Burp Extender plugin, that will deserialized java objects and encode them in XML using the [Xtream](http://xstream.codehaus.org/) library.
 
-Why? This release fixes the bug in the other implementation in JDSer-ng which didn't actually allow modification of the request. Also extends it further, allowing proper use of the intruder/scanner modules for deserialized Java objects. 
+Why? This release fixes the bug in the other implementation in JDSer-ng which didn't actually allow modification of the request. Also extends it further, allowing proper use of the intruder/scanner modules for deserialized Java objects. I've also added the ability to use it with SQLMap. Copy and paste the output of the "send deserialized to intruder" into a file, and sqlmap.py -r <file> --proxy "http://burp:port"
 
 Basically, it will deserialize, modify, reserialize, send on and (only in the case of the scanner) deserialize any responses that look like Java objects (to allow burp to flag any exception strings, etc.)
 
